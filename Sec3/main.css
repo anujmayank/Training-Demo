@@ -1,0 +1,17 @@
+.dog {
+    height: 50px;
+    width: 100px;
+    background-color: powderblue;
+}
+
+.cat {
+    height: 50px;
+    width: 100px;
+    background-color: papayawhip;
+}
+
+.mouse {
+    height: 50px;
+    width: 100px;
+    background-color: dodgerblue;
+}

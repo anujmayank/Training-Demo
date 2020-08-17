@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>React</title>
+	<!-- REACT LIBRARY -->
+	<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+	<!-- REACT DOM LIBRARY -->
+	<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+	<!-- BABEL LIBRARY -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+</head>
+<body>
+
+<div id="app">React is not rendered</div>
+
+<script type="text/babel">
+    //Styling functional stateless component
+	//inline approach
+	//containeted a complated component//easy to debug//do not need mutiple files to debug
+    var Dog = function(){
+        var animalStyles = {
+            height: 50,
+            width: 100,
+            backgroundColor: 'powderblue'
+		}
+        return(
+            <h1 style={animalStyles}>Dog</h1>
+        );
+    };
+
+    var Cat = function(){
+        return(
+            <h1 className="cat">Cat</h1>
+        );
+    };
+
+    var Mouse = function(){
+        return(
+            <h1 className="mouse">Mouse</h1>
+        );
+    };
+
+    ReactDOM.render(<div><Dog/><Cat/><Mouse/></div>, document.getElementById("app"));
+</script>
+</body>
+</html>

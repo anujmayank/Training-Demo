@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>React</title>
+	<!-- REACT LIBRARY -->
+	<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+	<!-- REACT DOM LIBRARY -->
+	<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+	<!-- BABEL LIBRARY -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+</head>
+<body>
+
+<div id="app">React is not rendered</div>
+
+<script type="text/babel">
+//functional stateless component
+//Capital
+//return
+	var Animals = function(){
+	    return(
+	      <h1>Dog, Cat, Mouse</h1>
+		);
+	};
+
+    ReactDOM.render(<Animals/>, document.getElementById("app"));
+</script>
+</body>
+</html>
